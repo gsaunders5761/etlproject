@@ -1,7 +1,7 @@
 # etlproject
 I combined data from multiple sources to fill a SQLite database with employeee, inventory, and transaction data for a fictional coffee chain
 ## Database schema: 
-  Employees: table populated from MySQL employee test database (modified)
+  Employees: table populated from MySQL employee test database tables employees and dept_emp (modified)
   Locations: table populated from MySQL employee test database departments table (converted to represent locations instead)
   Pastry Inventory: table populated from CSV of pastry inventory (downloaded with Kaggle API)
   Products: table populated from CSV of products (downloaded with Kaggle API)
