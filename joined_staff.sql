@@ -7,6 +7,13 @@ CREATE TABLE joined_staff (
     hire_date date,
     location_id INT
     );
+    
+SELECT * FROM wez6fg.dept_emp;
+ALTER TABLE dept_emp ALTER dept_no SET DEFAULT 1;
+ALTER TABLE dept_emp DROP COLUMN from_date;
+ALTER TABLE dept_emp DROP COLUMN to_date; 
+INSERT INTO `dept_emp` (`emp_no`) SELECT `staff_id` FROM `employees`;
+
 UPDATE dept_emp
 SET dept_no = CASE 
                         WHEN emp_no BETWEEN 1 AND 19  THEN '1'
